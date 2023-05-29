@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="4">
+                <div>
+                    <p id="cal"></p>
+                    <input type="text" placeholder="0" id="iValue">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><button class="lightButton" onclick="addElement('C')">C</button></td>
+            <td><button class="lightButton" onclick="addElement('invert')">+/-</button></td>
+            <td><button class="lightButton">%</button></td>
+            <td><button class="orangeButton" onclick="addElement(' / ')">÷</button></td>
+        </tr>
+        <tr>
+            <td><button class="darkButton" onclick="addElement('7')">7</button></td>
+            <td><button class="darkButton" onclick="addElement('8')">8</button></td>
+            <td><button class="darkButton" onclick="addElement('9')">9</button></td>
+            <td><button class="orangeButton" onclick="addElement(' * ')">x</button></td>
+        </tr>
+        <tr>
+            <td><button class="darkButton" onclick="addElement('4')">4</button></td>
+            <td><button class="darkButton" onclick="addElement('5')">5</button></td>
+            <td><button class="darkButton" onclick="addElement('6')">6</button></td>
+            <td><button class="orangeButton" onclick="addElement(' - ')">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="darkButton" onclick="addElement('1')">1</button></td>
+            <td><button class="darkButton" onclick="addElement('2')">2</button></td>
+            <td><button class="darkButton" onclick="addElement('3')">3</button></td>
+            <td><button class="orangeButton" onclick="addElement(' + ')">+</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button class="button-0 darkButton" onclick="addElement('0')">0</button></td>
+            <td><button class="darkButton">,</button></td>
+            <td><button class="orangeButton" onclick="addElement('=')">=</button></td>
+        </tr>
+        <tr>
+            <td><button class="orangeButton">x²</button></td>
+            <td><button class="orangeButton">x³</button></td>
+            <td><button class="orangeButton">PI</button></td>
+            <td><button class="orangeButton">√</button></td>
+        </tr>
+    </table>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
