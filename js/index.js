@@ -34,7 +34,17 @@ const addElement = (v) => {
     else if (v == 'invert') {
         InputValue.value = InputValue.value * -1;
     }
-
+    else if (v == "pi") {
+        InputValue.value = "3.14"
+    }
+    else if (v == ",") {
+        if (InputValue.value == "") {
+            InputValue.value = "0,"
+        }
+        else {
+            InputValue.value = InputValue.value + v;
+        }
+    }
     else {
         if (0 == v) {
             InputValue.value = ''
